@@ -16,5 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 require("gruvbox").setup()
+require("treesitter")
 
 vim.cmd("colorscheme gruvbox")
