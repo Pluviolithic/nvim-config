@@ -20,3 +20,4 @@ require('gruvbox').setup()
 require 'treesitter'
 
 vim.cmd 'colorscheme gruvbox'
+vim.api.nvim_set_option('clipboard', 'unnamed')
