@@ -1,6 +1,6 @@
 return {
-	"cappyzawa/trim.nvim",
+	'cappyzawa/trim.nvim',
 	config = function()
-		require("trim").setup()
+		require('trim').setup()
 	end,
 }
