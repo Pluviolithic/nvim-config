@@ -1,3 +1,4 @@
+require 'diagnostics'
 require 'configs'
 require 'mappings'
 require 'autocmds'

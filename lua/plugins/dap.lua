@@ -9,7 +9,7 @@ return {
 
 		dap.adapters.lldb = {
 			type = 'executable',
-			command = '/usr/bin/lldb-vscode',
+			command = '/usr/lib/llvm-18/bin/lldb-dap',
 			name = 'lldb',
 		}
 
@@ -80,7 +80,7 @@ return {
 
 		dap.configurations.c = dap.configurations.cpp
 
-		require('nvim-dap-virtual-text').setup()
+        require('nvim-dap-virtual-text').setup()
 		require('dap.ext.vscode').load_launchjs()
 
 		dapui.setup()

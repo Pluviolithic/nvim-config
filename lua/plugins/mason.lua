@@ -2,7 +2,7 @@ return {
 	'williamboman/mason.nvim',
 	dependencies = {
 		{ 'williamboman/mason-lspconfig.nvim' },
-		{ 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
+		{ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' },
 		{ 'neovim/nvim-lspconfig' },
 	},
 	config = function()
@@ -16,7 +16,7 @@ return {
 
 		require('mason').setup()
 		require('mason-lspconfig').setup {
-			ensure_installed = { 'luau_lsp', 'pyright' },
+			ensure_installed = { 'luau_lsp', 'basedpyright', 'lua_ls' },
 			handlers = {
 				lsp_zero.default_setup,
 			},
