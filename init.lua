@@ -20,5 +20,6 @@ require('lazy').setup 'plugins'
 require('gruvbox').setup()
 require 'treesitter'
 
+vim.o.background = 'light'
 vim.cmd 'colorscheme gruvbox'
 vim.api.nvim_set_option('clipboard', 'unnamed')
