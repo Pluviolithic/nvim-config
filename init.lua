@@ -22,4 +22,4 @@ require 'treesitter'
 
 vim.o.background = 'light'
 vim.cmd 'colorscheme gruvbox'
-vim.api.nvim_set_option('clipboard', 'unnamed')
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
